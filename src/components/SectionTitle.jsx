@@ -1,13 +1,15 @@
-import React from 'react'
+import React from 'react';
 import styles from '../scss/SectionTitle.module.scss';
 
-const SectionTitle = ({img, text}) => {
-	return (
-		<div className={styles.sectionTitle}>
-			<img src={img} alt={text} className={styles.sectionBubble} />
-			<h3>{text}</h3>
-		</div>
-	)
-}
+const SectionTitle = ({ img, text }) => {
+  return (
+    <div className={styles.text}>
+      <div className={styles.sectionTitle}>
+        <img src={img} alt={text} className={styles.sectionBubble} />
+        <h3>{text}</h3>
+      </div>
+    </div>
+  );
+};
 
-export default SectionTitle
+export default SectionTitle;

@@ -12,14 +12,12 @@ import SectionTitle from './SectionTitle';
 const Hero = () => {
   return (
     <section className={styles.hero}>
+      <SectionTitle img={titleBubble} text={'NFT Collection'}/>
       <div className={styles.text}>
-        <SectionTitle img={titleBubble} text={'NFT Collection'}/>
-  
         <div className={styles.mainTitle}>
           <h1>
             Bored <span>NFT Peeps</span>
           </h1>
-  
         </div>
       </div>
 
