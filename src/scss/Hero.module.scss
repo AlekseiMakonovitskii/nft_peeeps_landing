@@ -1,75 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
 .hero {
-	// padding: 2rem 0;
-	display: flex;
-	flex-direction: column;
+	padding-top: calc(70px + 1rem);
+	position: relative;
+	min-height: 100vh;
 }
 
 .text {
-	text-align: center;
-
-	h1 {
-		display: flex;
-		flex-direction: column;
-		font-size: 4rem;
-		font-family: 'Montserrat', sans-serif;
-		line-height: 3.5rem;
-	}
-
-	h3 {
-		font-size: 1.5rem;
-		font-weight: 900;
-		margin-bottom: 1rem;
-	}
-
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.images {
-	display: flex;
-	height: 90vw;
-	min-height: 370px;
-	max-height: 700px;
-
+.littleTitle {
 	position: relative;
-	padding-top: 2rem;
-	gap: 1rem;
-	overflow: hidden;
+	max-width: fit-content;
 
-	.imageContainer {
-		width: 100%;
-		position: relative;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+
+	.titleBubble {
+		position: absolute;
+		z-index: -1;
+		right: 160px;
+		bottom: 5px;;
+	}
+}
+
+.mainTitle {
+	position: relative;
+	max-width: fit-content;
+	font-size: 3.5rem;
+	font-family: 'Montserrat', sans-serif;
+	h1 {
+		text-align: center;
 		display: flex;
-		align-items: flex-end;
+		flex-direction: column;
+		line-height: 4.5rem;
+	}
 
-		img {
-			height: 65%;
-			position: absolute;
-		}
-
-		.oldMan {
-			z-index: 2;
-			left: 10px;
-			bottom: 70px
-		}
-
-		.lightCircle {
-			bottom: 20px;
-			left: 0;
-			height: 60%;
-		}
-
-		.woman {
-			z-index: 2;
-			right: 10px;
-			bottom: 35px
-		}
-
-		.pinkCircle {
-			right: 0;
-			height: 60%;
-		}
-
+	.mainTitleBubble {
+		position: absolute;
+		right: 70%;
+		bottom: 3%;
+		z-index: -1;
 	}
 
 }
