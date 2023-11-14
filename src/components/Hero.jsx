@@ -7,16 +7,14 @@ import pinkCircle from '../assets/pinkCircle.svg';
 import bubbles from '../assets/bubbles.svg';
 import bubbles2 from '../assets/bubbles2.svg';
 import titleBubble from '../assets/titleBubble.svg';
+import SectionTitle from './SectionTitle';
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.text}>
-        <div className={styles.littleTitle}>
-          <img src={titleBubble} alt="" className={styles.titleBubble} />
-          <h3>NFT Collection</h3>
-        </div>
-
+        <SectionTitle img={titleBubble} text={'NFT Collection'}/>
+  
         <div className={styles.mainTitle}>
           <h1>
             Bored <span>NFT Peeps</span>

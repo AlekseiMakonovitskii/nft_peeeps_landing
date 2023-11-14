@@ -1,0 +1,14 @@
+.sectionTitle {
+	position: relative;
+	max-width: fit-content;
+
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+
+	.sectionBubble {
+		position: absolute;
+		z-index: -1;
+		right: 160px;
+		bottom: 5px;;
+	}
+}
